@@ -5,6 +5,7 @@ const zh_cn = {
                 home: "首页",
                 projects: "试验性项目",
                 solutions: "解决方案",
+                documents: "文档",
                 about: "关于",
                 languages: "设置语言"
             }

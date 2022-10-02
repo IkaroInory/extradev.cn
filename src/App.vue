@@ -17,6 +17,9 @@
                 <el-menu-item index="solutions" route="/solutions">
                     <icon-experiment-one/>&nbsp;{{ $t('component.header.menu.solutions') }}
                 </el-menu-item>
+                <el-menu-item index="docs" route="/docs/Conventional_Commits">
+                    <icon-code/> {{$t('component.header.menu.documents')}}
+                </el-menu-item>
                 <el-menu-item index="about" route="/about">
                     <icon-info/>&nbsp;{{ $t('component.header.menu.about') }}
                 </el-menu-item>

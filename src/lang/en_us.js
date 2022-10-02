@@ -5,6 +5,7 @@ const en_us = {
                 home: "Home",
                 projects: "Projects",
                 solutions: "Solutions",
+                documents: "Documents",
                 about: "About",
                 languages: "Languages"
             }

@@ -2,9 +2,9 @@ import {createRouter, createWebHistory} from 'vue-router';
 import Home from "@/views/Home";
 import NotFound from "@/views/NotFound";
 import Locale from "@/views/Locale";
+import Documents from "@/views/Documents";
 import About from "@/views/About";
 import LocaleSet from "@/views/LocaleSet";
-import Environment from "@/api/environment";
 
 const routes = [
     {
@@ -16,6 +16,11 @@ const routes = [
         path: '/locale',
         name: 'locale',
         component: Locale
+    },
+    {
+        path: '/docs/Conventional_Commits',
+        name: 'documents',
+        component: Documents
     },
     {
         path: '/about',
