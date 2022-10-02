@@ -7,7 +7,7 @@
 </template>
 
 <script>
-    import ConventionalCommitDoc from "@/components/ConventionalCommitDoc";
+    import ConventionalCommitDoc from "@/docs/ConventionalCommitDoc";
 
     export default {
         name: "Documents",

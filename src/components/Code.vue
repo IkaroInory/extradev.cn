@@ -1,6 +1,6 @@
 <template>
     <div class="code-style" ref="code">
-        <slot></slot>
+        <slot/>
     </div>
 </template>
 
@@ -23,6 +23,7 @@
                 let html = '';
                 let mustArgCount = 0;
                 let optionalArgCount = 0;
+                let stringBuffer = '';
                 for (let i = 0; i < text.length; i++) {
                     if (text[i] === '<') {
                         html += '<span style="color: #89ddff">' + text[i] + '</span>';
@@ -46,10 +47,12 @@
                     }
                     if (mustArgCount > 0) {
                         html += '<span style="color: #f07178;">' + text[i] + '</span>';
+                        stringBuffer += text[i];
                         continue;
                     }
                     if (optionalArgCount > 0) {
                         html += '<span style="color: #c3e88d;">' + text[i] + '</span>';
+                        stringBuffer += text[i];
                         continue;
                     }
                     html += text[i];
