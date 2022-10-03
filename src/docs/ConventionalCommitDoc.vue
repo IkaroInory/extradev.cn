@@ -25,19 +25,27 @@
             提交说明的结构如下：
         </p>
         <Code language="args">
-            &lt;type[!]&gt;([field]): &lt;description&gt;<br/>
-            [context]<br/>
-            [footnote]<br/>
+            &lt;type&gt;([scope])[!]: &lt;description&gt;<br/>
+            [body]<br/>
+            [footer(s)]<br/>
         </Code>
         <p>
             下面对上述参数进行解释。
         </p>
         <ol>
             <li>type</li>
-            <ol style="list-style-type: lower-latin">
-                <li>feat：新增一个功能。</li>
-                <li>fix：修复一个bug。</li>
-                <li>docs：增加文档。</li>
+            <ol style="list-style-type: lower-roman">
+                <li>chore: 项目初始化。</li>
+                <li>feat：增加新功能。</li>
+                <li>fix：修复bug。</li>
+                <li>style：样式修改、布局修改。</li>
+                <li>test：测试环境部署及修改。</li>
+                <li>docs：增加或修改文档。</li>
+                <li>ci：持续集成相关文件修改。</li>
+                <li style="color: #ff0000">revert：恢复上一次提交。</li>
+                <li>perf：优化代码，以提高性能。</li>
+                <li>refactor：在不影响功代码内部行为和功能的前提下重构代码。</li>
+                <li>workflow：工作流相关文件修改。</li>
             </ol>
             <li>description：对提交的简要描述。</li>
         </ol>
@@ -56,7 +64,8 @@
 
         <h2>参考</h2>
         <dl>
-            <dd>[1] <a href="https://www.conventionalcommits.org/">conventionalcommits.org</a></dd>
+            <dd>[1] <a href="https://www.conventionalcommits.org" target="_blank">conventionalcommits.org</a></dd>
+            <dd>[2] <a href="https://zhuanlan.zhihu.com/p/90281637" target="_blank">谭光志 git commit 提交规范</a></dd>
         </dl>
     </el-card>
 </template>
@@ -78,6 +87,6 @@
     }
 
     .doc-paragraph {
-        text-indent: 2em
+        text-indent: 2em;
     }
 </style>
